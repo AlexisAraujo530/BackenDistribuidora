@@ -1,0 +1,283 @@
+:root {  
+  --main-color: white;
+  --second-color: #d1e6e7;  
+  --main-bg: #32407f;   
+}
+
+* {  
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--main-color);
+}
+
+a {  
+  text-decoration: none;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: var(--main-bg);
+  background: linear-gradient(to bottom, #32377f, #345f80); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+
+/* Formularios */
+
+.toFormuBtn {
+  background-color: transparent;  
+  border: 1px solid var(--main-color);
+  color: var(--main-color);  
+  margin: 0.5rem auto;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  flex: 0 0 auto;
+  width: 50vw;  
+  margin: 0 auto;
+  border: solid 1px var(--main-color);
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 2rem;
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px;
+  outline: none;
+  text-align: center;
+  background-color: transparent !important;
+}
+
+.form input::placeholder {
+  color: rgb(197, 197, 197);
+  font-weight: 100;
+}
+
+.form .form-button input {
+  font-size: 1rem;
+  border: solid 1px;
+  padding: 0.5rem 1rem;
+  background-color: transparent !important;
+  cursor: pointer;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.crateCartBtn {    
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 1rem auto;
+  color: var(--second-color);
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  padding: 0.3rem;
+  background-color: red;
+  padding: 0.5rem 1rem;  
+}
+button{
+  border-radius: 50px;
+}
+
+.btnSubmit {    
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 1rem auto;
+  color: var(--second-color);
+  border: 1px solid var(--main-color);
+  padding: 0.3rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;  
+}
+
+.btnReturn {    
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 1rem auto;
+  color: var(--second-color);
+  border: 1px solid var(--main-color);
+  padding: 0.3rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;  
+}
+
+
+/* Productos */
+
+.noProducts {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 5rem;
+}
+
+.productsContainer{
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center;
+  margin: 40px;
+}
+
+.productContainer {
+  border: 1px solid var(--main-color);
+  padding: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.productImage {
+  height: 200px;
+  /* width: 100% !important;
+  object-fit: contain; */
+  display: flex;
+  width: auto;
+  margin: auto !important;
+}
+
+.productImage img {
+  text-align: center;
+  width: auto;  
+  margin: 0px auto;
+}
+
+.productInfo {
+  text-align: center;
+}
+
+.productInfo h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.productInfo p {  
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--second-color);
+  border-top: 1px solid var(--main-color);
+}
+
+.productBtns {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+}
+
+.editBtn {    
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--second-color);
+  border: 1px solid var(--main-color);
+  padding: 0.3rem;
+  background-color: transparent;
+  margin-right: 0.5rem; 
+}
+
+.deleteBtn {    
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--second-color);
+  border: 1px solid var(--main-color);
+  padding: 0.3rem;
+  background-color: transparent; 
+  margin-left: 0.5rem; 
+}
+
+.addBtn {
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--second-color);
+  border: 1px solid var(--main-color);
+  padding: 0.3rem;
+  background-color: black;
+  margin: 1rem auto;  
+  cursor: pointer;
+}
+.editBtn{
+  background-color: black;
+}
+.deleteBtn{
+  background-color: black;
+}
+.toFormuBtn{
+  background-color: black;
+}
+.addToCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.btnReturn{
+  background-color: rgb(231, 1, 1);
+}
+.form-button{
+  border-radius: 50px;
+  background-color: green;
+}
+/* Enlace */
+.anchor {  
+  display: flex;  
+  width: 50vw;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;  
+}
+
+.anchor a{ 
+  width: auto;
+  border: solid 1px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 576px) {
+
+  .table {    
+    width: 90vw;    
+  }
+
+  .table .col {      
+    font-size: 1.5rem;    
+  }
+
+}
+
+
+/* CART */
+.carritosContainer {
+  margin: 40px;
+  
+}
+.carritosContainer, .table th, .table td {
+  border: 1px solid var(--main-color);
+}
+
+.carritosContainer h3 {
+  font-weight: 100;
+}
+
+.crateCartBtn {
+  cursor: pointer;
+}
+.deleteFromCart {
+  cursor: pointer;
+}
+
